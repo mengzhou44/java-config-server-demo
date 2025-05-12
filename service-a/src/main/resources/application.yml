@@ -2,9 +2,5 @@ spring:
   application:
     name: service-a  # Matches the application name on the Config Server
 
-  cloud:
-    config:
-      uri: http://localhost:8888  # URL of the Config Server (adjust if needed)
-
   config:
     import: "configserver:http://localhost:8888"  # Ensure this line is present
